@@ -36,6 +36,8 @@ angular.module('eliteApp', ['ionic'])
         views: {
             'home-leagues': {
                 templateUrl: 'templates/home/leagues.html'
+                //controller: 'LeaguesController',
+                //controllerAs: 'vm'
             }
         }
     })
@@ -68,7 +70,8 @@ angular.module('eliteApp', ['ionic'])
         url: '/teams/:id',
         views: {
             'mainContent': {
-                templateUrl: 'templates/teams/team-detail.html'
+                templateUrl: 'templates/teams/team-detail.html',
+                controller: 'TeamDetailController'
             }
         }
     })
